@@ -33,8 +33,8 @@ Each **AOC[year]/** folder contains:
 ├── day-01/
 │   ├── 1.py             # Solution for Part 1
 │   ├── 2.py             # Solution for Part 2
-│   ├── README.md        # Problem description and approach
 │   ├── input.txt        # Puzzle input for the day
+│   ├── README.md        # Problem description and approach
 │   ├── test.txt         # Sample input from problem description
 ├── ...
 ├── day-25/
