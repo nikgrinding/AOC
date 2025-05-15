@@ -1,32 +1,45 @@
-# Advent of Code 🎄
+# Advent of Code
 
-Welcome to my Advent of Code repository! This repository contains my solutions for the annual [Advent of Code](https://adventofcode.com/) coding challenge.
+Welcome to my **Advent of Code** repository!  
+This repository contains my Python solutions to the annual [Advent of Code](https://adventofcode.com/) coding challenge.
+
+---
 
 ## What is Advent of Code?
-Advent of Code is an annual programming event that provides a series of daily coding puzzles from December 1st to 25th.
+
+Advent of Code is a yearly programming event that runs from **December 1st to 25th**, offering a series of daily algorithmic puzzles. Each puzzle has two parts and varies in difficulty, making it a fun and challenging way to improve problem-solving skills.
+
+---
 
 ## Language Used  
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-## Structure
+---
 
+## Directory Structure
+
+```
 AOC/
-- **`AOC15/`**: Advent of Code - 2015
-- **`AOC16/`**: Advent of Code - 2016
-- ...
-- **`AOC24/`**: Advent of Code - 2024
+├── AOC15/               # Solutions for 2015
+├── AOC16/               # Solutions for 2016
+├── ...
+├── AOC24/               # Solutions for 2024
+```
 
-Each year will include:
-- **`day-01/`**: Solutions for Day 1
-- **`day-02/`**: Solutions for Day 2
-- ...
-- **`day-25/`**: Solutions for Day 25
+Each **AOC[year]/** folder contains:
 
-Each day will include:
-- **`1.py`**: solution for part - 1 of the puzzle
-- **`2.py`**: solution for part - 2 of the puzzle
-- **`input.txt`**: puzzle input for that day
-- **`test.txt`**: test input given in the puzzle
+```
+├── day-01/
+│   ├── 1.py             # Solution for Part 1
+│   ├── 2.py             # Solution for Part 2
+│   ├── input.txt        # Puzzle input for the day
+│   ├── test.txt         # Sample input from problem description
+├── ...
+├── day-25/
+```
 
-## *HAPPY CODING* 🎉
+---
+
+## Happy Coding!
+Enjoy the puzzles, write clean code, and have fun solving challenges each December!
