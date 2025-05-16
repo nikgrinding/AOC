@@ -16,7 +16,7 @@ For each box, the required **wrapping paper** is:
 
 ### Idea
 
-We can calaculate the surface area of each side individually and then use it to calculate the output by summing all the areas plus the minimum area among all of the sides.
+We can calculate the surface area of each side individually and then use it to calculate the output by summing all the areas plus the minimum area among all of the sides.
 
 ## Part 2
 
@@ -32,4 +32,4 @@ Now we calculate how much **ribbon** is needed for each box.
 
 ### Idea
 
-We can calaculate the perimeter of each side individually and then use it to calculate the output by finding the volume of the box plus the minimum perimeter among all of the sides.
+We can calculate the perimeter of each side individually and then use it to calculate the output by finding the volume of the box plus the minimum perimeter among all of the sides.
