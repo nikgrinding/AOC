@@ -28,4 +28,4 @@ with open(test_file) as f:
     
 with open(input_file) as f:
     part1_ip = f.read()
-    print ("\nPart - 1: Main", part_1(part1_ip))
+    print ("\nPart - 1: Main", part_1(part1_ip)) 

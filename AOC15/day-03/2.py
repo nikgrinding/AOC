@@ -18,7 +18,7 @@ def part_2(ip):
             houses.add(tuple(curr_1))
             houses.add(tuple(curr_2))
 
-    return len(houses)
+    return len(houses) 
 
 with open(test_file) as f:
     part2_ip = f.read().split("\n\n")[1]

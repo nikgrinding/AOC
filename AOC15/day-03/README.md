@@ -15,7 +15,7 @@ Each move takes Santa exactly one house in the corresponding direction, and he *
 - Input: `^>v<` → Output: `4`
 - Input: `^v^v^v^v^v` → Output: `2`
 
-### Idea
+### Idea 
 
 We can store santa's current location in a variable. After moving santa according to each direction, add the location to a set (stores only unique elements). The number of unique elements in the set represents the number of houses that received at least one present.
 
