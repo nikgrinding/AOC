@@ -13,8 +13,6 @@ We are given a **secret key**. To successfully mine an AdventCoin, we must find 
 
 We can use the built-in MD5 hashing algorithm in the `hashlib` library for hashing. Initially, we start with a variable set to `0`, append it to the given input, and check if the hashed value starts with five zeroes. If it does, we return the variable; otherwise, we increment it until we get such a hash.
 
----
-
 ## Part 2
 
 We are given a **secret key**. To successfully mine an AdventCoin, we must find the **smallest positive integer** that, when appended to the secret key and hashed with **MD5**, results in a hexadecimal string that **starts with six zeroes**.

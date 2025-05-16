@@ -12,4 +12,4 @@ def part_2(ip):
     
 with open(input_file) as f:
     part2_ip = f.read()
-    print ("\nPart - 2: Main", part_2(part2_ip))
+    print ("\nPart - 2: Main", part_2(part2_ip)) 
