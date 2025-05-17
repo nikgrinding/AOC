@@ -53,7 +53,7 @@ A **nice string** must now meet **both** of the following conditions:
    - Examples: 
      - `xyxy` → contains `xy` twice
      - `aabcdefgaa` → contains `aa` twice
-     - ❌ `aaa` does not count — overlapping `aa`
+     - `aaa` does not count — overlapping `aa`
 
 2. **It contains at least one letter which repeats with exactly one letter between them.**
    - Examples:
