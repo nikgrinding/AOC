@@ -1,25 +1,71 @@
 ## Part 1
 
-You're dropped in a city and given a sequence of directions. You start at the origin facing North. Each instruction tells you to turn left or right, then walk a number of blocks. Your task is to find the Manhattan distance from your starting point to your final position.
+You arrive at a secret entrance with a safe that has a dial numbered 0-99. The dial starts at 50. You're given a sequence of rotations in the format:
 
-**Examples:**
+-   `L<n>` - rotate left (toward lower numbers) by n clicks
+-   `R<n>` - rotate right (toward higher numbers) by n clicks
 
-- `R2, L3` → `5`
-- `R2, R2, R2` → `2`
-- `R5, L5, R5, R3` → `12`
+The dial wraps around (0-1 becomes 99, 99+1 becomes 0). The actual password is **the number of times the dial points at 0 after completing any rotation**.
+
+**Example:**
+
+```
+L68
+L30
+R48
+L5
+R60
+L55
+L1
+L99
+R14
+L82
+```
+
+Starting at 50:
+
+-   L68 -> 82
+-   L30 -> 52
+-   R48 -> 0 (count: 1)
+-   L5 -> 95
+-   R60 -> 55
+-   L55 -> 0 (count: 2)
+-   L1 -> 99
+-   L99 -> 0 (count: 3)
+-   R14 -> 14
+-   L82 -> 32
+
+Password = `3`
 
 ### Idea
 
-Keep track of your current direction and position, and update them as you process each instruction. At the end, return the sum of the absolute values of your x and y coordinates.
+Track the current position starting at 50. For each rotation:
+
+1. Apply the rotation (handle modulo 100 for wraparound)
+2. Check if the final position is 0 and increment counter
 
 ## Part 2
 
-Now you're asked to find the **first** location you visit twice. As you follow each instruction, you must move step by step and record every position you pass through. The moment you revisit a position, report its distance from the origin.
+Using "password method 0x434C49434B", you now count **every time the dial passes through 0 during any click**, not just at the end of rotations.
 
-**Examples:**
+**Example:**
+Using the same rotations:
 
-- `R8, R4, R4, R8` → `4`
+-   L68: dial goes 50->49->...->0->99->...->82 (passes 0 once during rotation)
+-   R48: dial ends at 0 (1 count)
+-   R60: dial goes 55->56->...->99->0->1->...->55 (passes 0 once during rotation)
+-   L55: dial ends at 0 (1 count)
+-   L99: dial ends at 0 (1 count)
+-   L82: dial goes 32->31->...->0->99->...->32 (passes 0 once during rotation)
+
+Total = `6` (3 from ending at 0, 3 from passing through 0)
+
+**Important:** A rotation like R1000 from position 50 would pass through 0 ten times (1000 -> 100 = 10 complete loops).
 
 ### Idea
 
-Simulate walking one block at a time in the current direction, recording all visited positions. Use a set to track locations. If a location is seen again, return its Manhattan distance immediately.
+For each rotation:
+
+1. Count how many complete loops around the dial (rotations -> 100)
+2. Check if the remaining rotation causes the dial to cross 0
+3. Count if the final position is 0
