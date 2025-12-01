@@ -1,5 +1,5 @@
-test_file = r"AOC\AOC16\day-08\test.txt"
-input_file = r"AOC\AOC16\day-08\input.txt"
+test_file = r"AOC16\day-08\test.txt"
+input_file = r"AOC16\day-08\input.txt"
 
 def part_2(ip, width, height):
 

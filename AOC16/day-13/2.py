@@ -1,7 +1,7 @@
 from collections import deque
 
-test_file = r"AOC\AOC16\day-13\test.txt"
-input_file = r"AOC\AOC16\day-13\input.txt"
+test_file = r"AOC16\day-13\test.txt"
+input_file = r"AOC16\day-13\input.txt"
 
 def part_2(target, offset):
     

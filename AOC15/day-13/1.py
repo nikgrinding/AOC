@@ -1,7 +1,7 @@
 from itertools import permutations
 
-test_file = r"AOC\AOC15\day-13\test.txt"
-input_file = r"AOC\AOC15\day-13\input.txt"
+test_file = r"AOC15\day-13\test.txt"
+input_file = r"AOC15\day-13\input.txt"
 
 def part_1(ip):
     ppl = sorted(set(i.split()[0] for i in ip))

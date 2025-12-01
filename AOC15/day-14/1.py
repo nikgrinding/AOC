@@ -1,5 +1,5 @@
-test_file = r"AOC\AOC15\day-14\test.txt"
-input_file = r"AOC\AOC15\day-14\input.txt"
+test_file = r"AOC15\day-14\test.txt"
+input_file = r"AOC15\day-14\input.txt"
 
 def part_1(ip, time):
     reindeer = [[int(i.split()[3]), int(i.split()[6]), int(i.split()[-2])]  for i in ip]

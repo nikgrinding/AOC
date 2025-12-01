@@ -1,7 +1,7 @@
 import hashlib
 
-test_file = r"AOC\AOC16\day-05\test.txt"
-input_file = r"AOC\AOC16\day-05\input.txt"
+test_file = r"AOC16\day-05\test.txt"
+input_file = r"AOC16\day-05\input.txt"
 
 def part_1(ip):
     i = 0

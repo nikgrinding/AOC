@@ -1,7 +1,7 @@
 import re 
 
-test_file = r"AOC\AOC16\day-07\test.txt"
-input_file = r"AOC\AOC16\day-07\input.txt"
+test_file = r"AOC16\day-07\test.txt"
+input_file = r"AOC16\day-07\input.txt"
 
 def part_1(ip):
 

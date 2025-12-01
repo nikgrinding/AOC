@@ -1,5 +1,5 @@
-test_file = r"AOC\AOC15\day-25\test.txt"
-input_file = r"AOC\AOC15\day-25\input.txt"
+test_file = r"AOC15\day-25\test.txt"
+input_file = r"AOC15\day-25\input.txt"
 
 def part_1(ip):
     cell_no = (sum(ip)-1)*(sum(ip)-2)//2 + ip[1]

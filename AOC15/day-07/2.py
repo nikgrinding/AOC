@@ -1,5 +1,5 @@
-test_file = r"AOC\AOC15\day-07\test.txt"
-input_file = r"AOC\AOC15\day-07\input.txt"
+test_file = r"AOC15\day-07\test.txt"
+input_file = r"AOC15\day-07\input.txt"
 
 def op (a, operation, b):
     if operation == "AND": return a & b

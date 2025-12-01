@@ -1,8 +1,8 @@
 from collections import deque
 from itertools import combinations
 
-test_file = r"AOC\AOC16\day-11\test.txt"
-input_file = r"AOC\AOC16\day-11\input.txt"
+test_file = r"AOC16\day-11\test.txt"
+input_file = r"AOC16\day-11\input.txt"
 
 def part_2(ip):
 

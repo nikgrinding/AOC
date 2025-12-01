@@ -1,7 +1,7 @@
 import json
 
-test_file = r"AOC\AOC15\day-12\test.txt"
-input_file = r"AOC\AOC15\day-12\input.txt"
+test_file = r"AOC15\day-12\test.txt"
+input_file = r"AOC15\day-12\input.txt"
 
 def part_2(ip):
 
