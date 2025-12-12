@@ -1,5 +1,5 @@
-test_file = r"test.txt"
-input_file = r"input.txt"
+test_file = r"AOC25\day-11\test.txt"
+input_file = r"AOC25\day-11\input.txt"
 
 def part_1(ip):
     graph = {i.split(': ')[0]: i.split(': ')[1].split() for i in ip}

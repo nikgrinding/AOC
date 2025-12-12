@@ -1,5 +1,5 @@
-test_file = r"test.txt"
-input_file = r"input.txt"
+test_file = r"AOC25\day-09\test.txt"
+input_file = r"AOC25\day-09\input.txt"
 
 def part_1(ip):
     ip = [[int(j) for j in i.split(',')[::-1]] for i in ip]
